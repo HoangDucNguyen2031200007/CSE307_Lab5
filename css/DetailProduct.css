@@ -1,0 +1,375 @@
+header {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo img {
+    width: 300px;
+    height: 150px;
+}
+
+.top-links {
+    text-align: right;
+    font-weight: bold;
+}
+
+.top-links a {
+    margin: 5px;
+    font-family: sans-serif
+}
+
+.top-links a:hover {
+    color: #900;
+}
+
+/* nav {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(89, 235, 152);
+    display: inline-block;
+} */
+
+#body {
+    clear: both;
+    width: 99%;
+    margin: auto;
+    background-color: rgb(232, 230, 230);
+    box-shadow: 0px 0px 5px 5px rgba(198, 190, 190, 0.76);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(198, 190, 190, 0.76);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(198, 190, 190, 0.76);
+}
+
+article {
+    display: table-row;
+}
+
+aside#left,
+aside#right,
+section {
+    display: table-cell;
+    vertical-align: top;
+}
+
+aside#left {
+    width: 20%;
+}
+
+aside#right {
+    width: 20%;
+}
+
+.book-by-subject {
+    border: 1px solid blue;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.book-by-subject h3 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 10;
+    margin: 0;
+}
+
+.book-by-subject ul {
+    margin: 0 0 10px 0;
+    padding-left: 27px;
+}
+
+.book-by-subject ul li {
+    padding: 2px;
+}
+
+.book-by-subject ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.book-by-subject ul li a:hover {
+    color: red;
+}
+
+.book-by-publisher {
+    border: 1px solid blue;
+    border-radius: 2px;
+}
+
+.book-by-publisher h3 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 10;
+    margin: 0;
+}
+
+.book-by-publisher ul {
+    margin: 0 0 10px 0;
+    padding-left: 27px;
+}
+
+.book-by-publisher ul li {
+    padding: 2px;
+}
+
+.book-by-publisher ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.book-by-subject ul li a:hover {
+    color: red;
+}
+
+/* .menu-list {
+    text-align: left;
+}
+
+.menu-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list ul li {
+    float: left;
+}
+
+.menu-list ul li a {
+    display: block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-left: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.home-link {
+    border-left: none !important;
+    margin-left: 50px;
+}
+
+.menu-list ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    float: right !important;
+    margin: 10;
+} */
+
+.best-seller {
+    border: 1px solid blue;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.best-seller h3 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.best-seller-list {
+    text-align: center;
+}
+
+.best-seller-list p {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.best-seller-list a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: green;
+}
+
+.best-seller-list a:hover {
+    color: red;
+}
+
+.best-seller-list img {
+    width: 100px;
+    height: 150px;
+}
+
+.website-link {
+    border: 1px solid blue;
+    border-radius: 2px;
+    margin: 10px;
+}
+
+.website-link h3 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 10;
+    margin: 0;
+}
+
+#weblink {
+    margin: 20px;
+}
+
+.statistics {
+    border: 1px solid blue;
+    border-radius: 2px;
+    margin: 10px;
+    background-color: rgb(229, 229, 250);
+}
+
+.statistics h3 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 10;
+    margin: 0;
+}
+
+.statistics p {
+    color: red;
+    margin: 10px 0 0 20px;
+}
+
+/* section .title {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 10;
+    margin: 10;
+    border: 1px solid blue;
+    border-radius: 2px;
+} */
+
+.title {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    align-content: center;
+    font-weight: bold;
+}
+
+.detail-box {
+    width: 100%;
+    padding: 10px;
+}
+
+.container {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.product-view {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px dashed green;
+    background-color: rgb(167, 230, 255);
+    height: 100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.product-box {
+    width: 90%;
+}
+
+.book-image {
+    border: 5px solid darkgreen;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.additional-info-list {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.additional-info-list li {
+    padding: 5px;
+}
+
+.additional-info {
+    margin-left: 30px;
+}
+
+.additional-info-name {
+    color: blue;
+}
+
+.price {
+    color: red;
+}
+
+/* .book-title a {
+    text-decoration: none;
+    color: rgb(3, 3, 95);
+    font-size: 20;
+    font-weight: bold;
+}
+
+.book-title a:hover {
+    font-style: italic;
+}
+
+.book-photo {
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.book-photo:hover {
+    transform: scale(1.1);
+} */
+
+/* .bill {
+    font-weight: bold;
+} */
+
+footer {
+    background-color: rgb(65, 170, 65);
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 20px 0;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+}
+
+.menu-items {
+    border-radius: 20px !important;
+}

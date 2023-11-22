@@ -42,7 +42,10 @@
         aria-label="Toolbar with button groups"
       >
         <div class="btn-group" role="group" aria-label="First group">
-          <a href="#" class="btn btn-success menu-items" aria-current="page"
+          <a
+            href="Homepage.html"
+            class="btn btn-success menu-items"
+            aria-current="page"
             >HOME PAGE</a
           >
           <a href="#" class="btn btn-success menu-items">INTRODUCTION</a>
@@ -152,7 +155,12 @@
         </aside>
 
         <section>
-          <form action="#" class="login-form" method="post">
+          <form
+            action="Homepage.html"
+            class="login-form"
+            method="post"
+            onsubmit="return validate()"
+          >
             <h3 class="login-title">LOG IN</h3>
             <div class="container">
               <div class="row align-items-center input-field-row">
@@ -198,6 +206,7 @@
                       class="btn btn-success"
                       type="submit"
                       value="SIGN IN"
+                      id="sign-in-button"
                       data-bs-toggle="modal"
                       data-bs-target="#staticBackdrop"
                       onclick="validate()"
@@ -329,46 +338,49 @@
           window.location = "Homepage.html";
           return false;
         } else {
-          let modal = "<div
-                      class="modal fade"
-                      id="staticBackdrop"
-                      data-bs-backdrop="static"
-                      data-bs-keyboard="false"
-                      tabindex="-1"
-                      aria-labelledby="staticBackdropLabel"
-                      aria-hidden="true"
+          let modal = (
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Check information
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Please enter complete information
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
                     >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1
-                              class="modal-title fs-5"
-                              id="staticBackdropLabel"
-                            >
-                              Check information
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            Please enter complete information
-                          </div>
-                          <div class="modal-footer">
-                            <button
-                              type="button"
-                              class="btn btn-danger"
-                              data-bs-dismiss="modal"
-                            >
-                              Close
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>";
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+          var btn = document.getElementById("sign-in-button");
+          btn.onclick = function () {
+            modal.style.display = "block";
+          };
         }
       }
     </script>
